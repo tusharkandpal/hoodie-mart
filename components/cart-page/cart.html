@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./cart.css" />
+    <title>Cart</title>
+  </head>
+  <body>
+    <!-- || NAVBAR -->
+    <nav class="navbar">
+      <a href="/" class="link">
+        <h3 class="brand-name">
+          <span class="brand-first-name">Hoodie</span> Mart
+        </h3>
+      </a>
+      <span class="search-addon">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" class="search-input" placeholder="Search" />
+      </span>
+      <div class="nav-right">
+        <a href="../login-page/login.html" class="link">
+          <button type="button" class="btn btn-sm primary">Login</button>
+        </a>
+        <a href="../wishlist-page/wishlist.html" class="link">
+          <span class="badge icon-badge">
+            <i class="fa-regular fa-heart badge-symbol"></i>
+            <span class="badge-count">5</span>
+          </span>
+        </a>
+        <a href="./cart.html" class="link">
+          <span class="badge icon-badge">
+            <i class="fas fa-shopping-cart badge-symbol"></i>
+            <span class="badge-count">2</span>
+          </span>
+        </a>
+      </div>
+    </nav>
+    <!-- || CART MAIN -->
+    <main class="cart-main">
+      <h3 class="cart-header">MY CART (2)</h3>
+      <!-- || CART SECTION -->
+      <section class="cart-section">
+        <!-- || CARD HORIZONTAL -->
+        <div class="card card-horizontal">
+          <img
+            class="card-img card-img-horizontal"
+            src="../../assets/product-item.webp"
+            alt="card"
+          />
+          <div class="card-details-horizontal">
+            <div class="card-details">
+              <h3 class="card-title">H&T</h3>
+              <small class="card-sub-title">
+                Men Light Blue Relaxed Fit Hoodie
+              </small>
+            </div>
+            <div class="card-price-section">
+              <strong class="selling-price">₹ 1199</strong>
+              <small class="original-price">₹ 1499</small>
+              <p class="discount">(20% off)</p>
+            </div>
+            <div class="card-quantity">
+              <p>
+                Quantity:
+                <button type="button" class="card-quantity-btn">
+                  <i class="fa-solid fa-minus"></i>
+                </button>
+                <input type="text" class="quantity-value" value="2" />
+                <button type="button" class="card-quantity-btn">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </p>
+            </div>
+            <div class="card-horizontal-buttons">
+              <button type="button" class="btn btn-lg primary card-btn">
+                <i class="fa-solid fa-trash btn-icon"></i> Remove from cart
+              </button>
+              <button
+                type="button"
+                class="btn btn-lg outline outline-info card-btn"
+              >
+                <i class="fa-regular fa-heart btn-icon"></i> Move to wishlist
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- || CARD TEXT ONLY -->
+        <div class="card card-text-only">
+          <h3 class="card-text-title">PRICE DETAILS</h3>
+          <hr class="line-separate" />
+          <p class="card-text-item">
+            <span class="card-text-label">Price (<span>2</span> items) </span>
+            <span>₹2398</span>
+          </p>
+          <p class="card-text-item">
+            <span class="card-text-label">Discount</span>
+            <span class="discount-charges">- ₹300</span>
+          </p>
+          <p class="card-text-item">
+            <span class="card-text-label">Delivery charges</span>
+            <span>
+              <span class="original-price">₹199</span>
+              <span class="discount-charges">Free</span>
+            </span>
+          </p>
+          <hr class="line-separate" />
+          <p class="card-text-item">
+            <span class="card-text-label">
+              <strong>TOTAL AMOUNT</strong>
+            </span>
+            <span>₹1998</span>
+          </p>
+          <hr class="line-separate" />
+          <p class="card-text-label">
+            You have saved
+            <strong class="discount-charges">₹499</strong>
+            on this purchase.
+          </p>
+          <button type="button" class="btn btn-lg primary">
+            <i class="fa-solid fa-bag-shopping btn-icon"></i> Place Order
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+

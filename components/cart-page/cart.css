@@ -1,0 +1,22 @@
+/* ------------------------|| IMPORTS -----------------------*/
+@import url("../../utilities/main.css");
+
+/* -------------------- || CART MAIN --------------------- */
+.cart-main {
+  background-color: #f7f7f7;
+  padding: 2rem 0;
+}
+.cart-header {
+  text-align: center;
+}
+
+/* -------------------- || CART SECTION --------------------- */
+.cart-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem 0;
+}
+
