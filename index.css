@@ -1,0 +1,54 @@
+/* ------------------------|| IMPORTS -----------------------*/
+@import url('./utilities/main.css');
+
+/*--------------------- || HOMEPAGE ----------------------------*/
+
+/* --------------------------- || CATEGORY SECTION ----------------- */
+.main {
+    padding: 2rem 7rem;
+    background-color: #F7F7F7;
+}
+.category-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.card-vertical {
+    min-width: 14rem;
+}
+.card-overlay-details {
+    background-color: #800039;
+}
+
+/* ----------------------------- || BANNER SECTION -------------------- */
+.banner-section {
+    background-color: #C4C4C4;
+    min-height: 30rem;
+    margin: 2rem 0;
+}
+
+/* --------------------- || ARTICLE SECTION ------------------- */
+.article-section {
+    display: flex;
+    gap: 2rem;
+}
+.article {
+    background-color: #C4C4C4;
+    display: flex;
+    padding: 3rem 2.5rem;
+}
+.article-img {
+    max-width: 10rem;
+}
+.article-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 3rem;
+}
+.article-header {
+    margin-bottom: 1.5rem;
+}
+
+
