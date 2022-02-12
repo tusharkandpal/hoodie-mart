@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./products.css" />
+    <title>Products</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/" class="link">
+        <h3 class="brand-name">
+          <span class="brand-first-name">Hoodie</span> Mart
+        </h3>
+      </a>
+      <span class="search-addon">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" class="search-input" placeholder="Search" />
+      </span>
+      <div class="nav-right">
+        <a href="../login/login.html" class="link">
+          <button type="button" class="btn btn-sm primary">Login</button>
+        </a>
+        <a href="../wishlist/wishlist.html" class="link">
+          <span class="badge icon-badge">
+            <i class="fa-regular fa-heart badge-symbol"></i>
+            <span class="badge-count">5</span>
+          </span>
+        </a>
+        <a href="../cart/cart.html" class="link">
+          <span class="badge icon-badge">
+            <i class="fas fa-shopping-cart badge-symbol"></i>
+            <span class="badge-count">8</span>
+          </span>
+        </a>
+      </div>
+    </nav>
+    <main class="products-main">
+      <aside class="products-sidebar">
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <span class="list-filter-header">Filters</span>
+            <span class="list-filter-clear">Clear</span>
+          </li>
+          <li class="sidebar-list-item">
+            <span class="list-filter-header">Price</span>
+            <div class="list-filter-item">
+              <label class="item-label">
+                <input type="radio" name="price" class="item-input" />Less than
+                ₹1500
+              </label>
+              <label class="item-label">
+                <input type="radio" name="price" class="item-input" />₹1500 -
+                ₹5000
+              </label>
+              <label class="item-label">
+                <input type="radio" name="price" class="item-input" />More than
+                ₹5000
+              </label>
+            </div>
+          </li>
+          <li class="sidebar-list-item">
+            <span class="list-filter-header">Category</span>
+            <div class="list-filter-item">
+              <label class="item-label">
+                <input type="checkbox" name="category" class="item-input" />
+                Men Clothing
+              </label>
+              <label class="item-label">
+                <input type="checkbox" name="category" class="item-input" />
+                Women Clothing
+              </label>
+            </div>
+          </li>
+          <li class="sidebar-list-item">
+            <span class="list-filter-header">Rating</span>
+            <div class="list-filter-item">
+              <label class="item-label">
+                <input type="radio" name="rating" class="item-input" />4 stars &
+                above
+              </label>
+              <label class="item-label">
+                <input type="radio" name="rating" class="item-input" />3 stars &
+                above
+              </label>
+              <label class="item-label">
+                <input type="radio" name="rating" class="item-input" />2 stars &
+                above
+              </label>
+              <label class="item-label">
+                <input type="radio" name="rating" class="item-input" />1 star &
+                above
+              </label>
+            </div>
+          </li>
+          <li class="sidebar-list-item">
+            <span class="list-filter-header">Sort by</span>
+            <div class="list-filter-item">
+              <label class="item-label">
+                <input type="radio" name="sort-by" class="item-input" />Price -
+                Low to High
+              </label>
+              <label class="item-label">
+                <input type="radio" name="sort-by" class="item-input" />Price -
+                High to Low
+              </label>
+            </div>
+          </li>
+        </ul>
+      </aside>
+      <section class="products-section">
+        <h3 class="products-section-header">Showing All Products</h3>
+        <span>(Showing 8 products)</span>
+        <article class="products-layout">
+          <div class="card card-vertical">
+            <img
+              class="card-img"
+              src="../../assets/product-item.webp"
+              alt="product"
+            />
+            <div class="card-details">
+              <h3 class="card-title">H&T</h3>
+              <small class="card-sub-title">
+                Men Light Blue Relaxed Fit Hoodie
+              </small>
+            </div>
+            <div class="card-price-section">
+              <strong class="selling-price">₹ 1199</strong>
+              <small class="original-price">₹ 1499</small>
+              <p class="discount">(20% off)</p>
+            </div>
+            <div class="card-buttons">
+              <button type="button" class="btn btn-sm primary">
+                <i class="fas fa-shopping-cart btn-icon"></i> Add to cart
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm outline outline-info card-icon"
+              >
+                <i class="fa-regular fa-heart btn-icon"></i> Wishlist
+              </button>
+            </div>
+          </div>
+          <div class="card card-vertical">
+            <div class="card-overlay-container">
+              <img
+                class="card-img"
+                src="../../assets/product-item.webp"
+                alt="product"
+              />
+              <small class="card-badge">Trending</small>
+            </div>
+            <div class="card-details">
+              <h3 class="card-title">H&T</h3>
+              <small class="card-sub-title">
+                Men Light Blue Relaxed Fit Hoodie
+              </small>
+            </div>
+            <div class="card-price-section">
+              <strong class="selling-price">₹ 1199</strong>
+              <small class="original-price">₹ 1499</small>
+              <p class="discount">(20% off)</p>
+            </div>
+            <div class="card-buttons">
+              <button type="button" class="btn btn-sm primary">
+                <i class="fas fa-shopping-cart btn-icon"></i> Add to cart
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm outline outline-info card-icon"
+              >
+                <i class="fa-regular fa-heart btn-icon"></i> Wishlist
+              </button>
+            </div>
+          </div>
+          <div class="card card-vertical">
+            <img
+              class="card-img"
+              src="../../assets/product-item.webp"
+              alt="product"
+            />
+            <div class="card-details">
+              <h3 class="card-title">H&T</h3>
+              <small class="card-sub-title">
+                Men Light Blue Relaxed Fit Hoodie
+              </small>
+            </div>
+            <div class="card-price-section">
+              <strong class="selling-price">₹ 1199</strong>
+              <small class="original-price">₹ 1499</small>
+              <p class="discount">(20% off)</p>
+            </div>
+            <div class="card-buttons">
+              <button type="button" class="btn btn-sm primary">
+                <i class="fas fa-shopping-cart btn-icon"></i> Add to cart
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm outline outline-info card-icon"
+              >
+                <i class="fa-regular fa-heart btn-icon"></i> Wishlist
+              </button>
+            </div>
+          </div>
+          <div class="card card-vertical">
+            <img
+              class="card-img"
+              src="../../assets/product-item.webp"
+              alt="product"
+            />
+            <div class="card-details">
+              <h3 class="card-title">H&T</h3>
+              <small class="card-sub-title">
+                Men Light Blue Relaxed Fit Hoodie
+              </small>
+            </div>
+            <div class="card-price-section">
+              <strong class="selling-price">₹ 1199</strong>
+              <small class="original-price">₹ 1499</small>
+              <p class="discount">(20% off)</p>
+            </div>
+            <div class="card-buttons">
+              <button type="button" class="btn btn-sm primary">
+                <i class="fas fa-shopping-cart btn-icon"></i> Add to cart
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm outline outline-info card-icon"
+              >
+                <i class="fa-regular fa-heart btn-icon"></i> Wishlist
+              </button>
+            </div>
+          </div>
+          <div class="card card-vertical">
+            <img
+              class="card-img"
+              src="../../assets/product-item.webp"
+              alt="product"
+            />
+            <div class="card-details">
+              <h3 class="card-title">H&T</h3>
+              <small class="card-sub-title">
+                Men Light Blue Relaxed Fit Hoodie
+              </small>
+            </div>
+            <div class="card-price-section">
+              <strong class="selling-price">₹ 1199</strong>
+              <small class="original-price">₹ 1499</small>
+              <p class="discount">(20% off)</p>
+            </div>
+            <div class="card-buttons">
+              <button type="button" class="btn btn-sm primary">
+                <i class="fas fa-shopping-cart btn-icon"></i> Add to cart
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm outline outline-info card-icon"
+              >
+                <i class="fa-regular fa-heart btn-icon"></i> Wishlist
+              </button>
+            </div>
+          </div>
+          <div class="card card-vertical">
+            <img
+              class="card-img"
+              src="../../assets/product-item.webp"
+              alt="product"
+            />
+            <div class="card-details">
+              <h3 class="card-title">H&T</h3>
+              <small class="card-sub-title">
+                Men Light Blue Relaxed Fit Hoodie
+              </small>
+            </div>
+            <div class="card-price-section">
+              <strong class="selling-price">₹ 1199</strong>
+              <small class="original-price">₹ 1499</small>
+              <p class="discount">(20% off)</p>
+            </div>
+            <div class="card-buttons">
+              <button type="button" class="btn btn-sm primary">
+                <i class="fas fa-shopping-cart btn-icon"></i> Add to cart
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm outline outline-info card-icon"
+              >
+                <i class="fa-regular fa-heart btn-icon"></i> Wishlist
+              </button>
+            </div>
+          </div>
+          <div class="card card-vertical">
+            <img
+              class="card-img"
+              src="../../assets/product-item.webp"
+              alt="product"
+            />
+            <div class="card-details">
+              <h3 class="card-title">H&T</h3>
+              <small class="card-sub-title">
+                Men Light Blue Relaxed Fit Hoodie
+              </small>
+            </div>
+            <div class="card-price-section">
+              <strong class="selling-price">₹ 1199</strong>
+              <small class="original-price">₹ 1499</small>
+              <p class="discount">(20% off)</p>
+            </div>
+            <div class="card-buttons">
+              <button type="button" class="btn btn-sm primary">
+                <i class="fas fa-shopping-cart btn-icon"></i> Add to cart
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm outline outline-info card-icon"
+              >
+                <i class="fa-regular fa-heart btn-icon"></i> Wishlist
+              </button>
+            </div>
+          </div>
+          <div class="card card-vertical">
+            <div class="card-overlay-container">
+              <img
+                class="card-img"
+                src="../../assets/product-item.webp"
+                alt="product"
+              />
+              <small class="card-badge">Trending</small>
+            </div>
+            <div class="card-details">
+              <h3 class="card-title">H&T</h3>
+              <small class="card-sub-title">
+                Men Light Blue Relaxed Fit Hoodie
+              </small>
+            </div>
+            <div class="card-price-section">
+              <strong class="selling-price">₹ 1199</strong>
+              <small class="original-price">₹ 1499</small>
+              <p class="discount">(20% off)</p>
+            </div>
+            <div class="card-buttons">
+              <button type="button" class="btn btn-sm primary">
+                <i class="fas fa-shopping-cart btn-icon"></i> Add to cart
+              </button>
+              <button
+                type="button"
+                class="btn btn-sm outline outline-info card-icon"
+              >
+                <i class="fa-regular fa-heart btn-icon"></i> Wishlist
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
+
