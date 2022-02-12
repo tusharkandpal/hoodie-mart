@@ -1,0 +1,60 @@
+/* ------------------------|| IMPORTS -----------------------*/
+@import url("../../utilities/main.css");
+
+/* ---------------------- || PRODUCTS PAGE --------------------------- */
+.products-main {
+  display: flex;
+}
+
+/* ------------------------ || PRODUCTS SIDEBAR --------------------------------*/
+.products-sidebar {
+  flex-basis: 28rem;
+}
+.sidebar-list {
+  list-style: none;
+  padding: 1.5rem;
+}
+.sidebar-list-item {
+  margin-bottom: 1.8rem;
+}
+.list-filter-clear {
+  float: right;
+  text-decoration: underline;
+}
+.list-filter-header {
+  font-weight: 800;
+}
+
+/* ---------------------- || SIDEBAR LIST --------------------------------*/
+.item-label {
+  display: inline-block;
+  margin-top: 1rem;
+}
+.item-input {
+  margin-right: 0.3rem;
+}
+
+/* ---------------------- || PRODUCTS SECTION --------------------------------*/
+.products-section {
+  background-color: #f5f5f5;
+  border-radius: 0.3rem;
+  padding: 2rem 3rem;
+  flex-grow: 1;
+}
+.products-section-header {
+  display: inline;
+}
+
+/* ----------------------- || PRODUCT LAYOUT ---------------------------*/
+.products-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+/* ----------------------- || PRODUCT IMAGE ---------------------------*/
+.card-img {
+  min-height: 18rem;
+}
+
