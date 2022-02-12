@@ -1,5 +1,6 @@
 /* ------------------------ || IMPORTS -----------------------*/
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+@import url('https://wings-ui.netlify.app/components/component.css');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap');
 
 /* ------------------- || ROOT CSS ---------------------------*/
@@ -10,13 +11,17 @@
     padding: 0;
 }
 
+/* -------------- UTILITIES -------------- */
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
 /*--------------------- || NAVBAR ----------------------------*/
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 0;
-    padding: 0;
 }
 .brand-name {
     font-size: 1.3rem;

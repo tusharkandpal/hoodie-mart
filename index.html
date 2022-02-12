@@ -4,34 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://wings-ui.netlify.app/components/component.css"
-    />
     <link rel="stylesheet" href="./index.css" />
     <title>Hoodie Mart</title>
   </head>
   <body>
+    <!-- || NAVBAR -->
     <nav class="navbar">
-      <h3 class="brand-name">
-        <span class="brand-first-name">Hoodie</span> Mart
-      </h3>
+      <a href="/" class="link">
+        <h3 class="brand-name">
+          <span class="brand-first-name">Hoodie</span> Mart
+        </h3>
+      </a>
       <span class="search-addon">
         <i class="fa-solid fa-magnifying-glass search-icon"></i>
         <input type="text" class="search-input" placeholder="Search" />
       </span>
       <div class="nav-right">
-        <button type="button" class="btn btn-sm primary">Login</button>
-        <span class="badge icon-badge">
-          <i class="fa-regular fa-heart badge-symbol"></i>
-          <span class="badge-count">5</span>
-        </span>
-        <span class="badge icon-badge">
-          <i class="fas fa-shopping-cart badge-symbol"></i>
-          <span class="badge-count">888</span>
-        </span>
+        <a href="./components/login/login.html" class="link">
+          <button type="button" class="btn btn-sm primary">
+            Login
+          </button>
+        </a>
+        <a href="./components/wishlist/wishlist.html" class="link">
+          <span class="badge icon-badge">
+            <i class="fa-regular fa-heart badge-symbol"></i>
+            <span class="badge-count">5</span>
+          </span>
+        </a>
+        <a href="./components/cart/cart.html" class="link">
+          <span class="badge icon-badge">
+            <i class="fas fa-shopping-cart badge-symbol"></i>
+            <span class="badge-count">888</span>
+          </span>
+        </a>
       </div>
     </nav>
+    <!-- || MAIN -->
     <main class="main">
       <section class="category-section">
         <a href="./components/product-page/products.html"
@@ -115,6 +123,7 @@
         </div>
       </section>
     </main>
+    <!-- FOOTER -->
     <footer>
       <div class="footer-left"></div>
       <div class="footer-right"></div>
