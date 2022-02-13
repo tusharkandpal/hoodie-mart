@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./signup.css" />
+    <title>Cart</title>
+  </head>
+  <body>
+    <!-- || NAVBAR -->
+    <nav class="navbar">
+      <a href="/" class="link">
+        <h3 class="brand-name">
+          <span class="brand-first-name">Hoodie</span> Mart
+        </h3>
+      </a>
+      <span class="search-addon">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" class="search-input" placeholder="Search" />
+      </span>
+      <div class="nav-right">
+        <a href="../login-page/login.html" class="link">
+          <button type="button" class="btn btn-sm primary">Login</button>
+        </a>
+        <a href="../wishlist-page/wishlist.html" class="link">
+          <span class="badge icon-badge">
+            <i class="fa-regular fa-heart badge-symbol"></i>
+            <span class="badge-count">5</span>
+          </span>
+        </a>
+        <a href="./cart.html" class="link">
+          <span class="badge icon-badge">
+            <i class="fas fa-shopping-cart badge-symbol"></i>
+            <span class="badge-count">2</span>
+          </span>
+        </a>
+      </div>
+    </nav>
+    <!-- || SIGNUP MAIN -->
+    <main class="signup-main">
+      <!-- || SIGNUP SECTION -->
+      <section class="signup-section">
+        <!-- || SIGNUP FORM -->
+        <form novalidate class="form-container">
+          <div class="form-field">
+            <h3 class="signup-header">Signup</h3>
+            <label class="form-label required" for="email">Email</label>
+            <input class="form-input" id="email" type="email" placeholder="abc@xyz.com" required />
+            <p class="form-invalid-message">
+              <i class="fas fa-info-circle"></i> Please enter correct email!
+            </p>
+            <p class="form-valid-message">
+              <i class="fas fa-check-circle"></i> That's right!
+            </p>
+          </div>
+          <div class="form-field">
+            <label class="form-label required" for="password">Password</label>
+            <input
+              class="form-input"
+              id="password"
+              type="password"
+              placeholder="************"
+              required
+              minlength="6"
+            />
+            <p class="form-invalid-message">
+              <i class="fas fa-info-circle"></i> Please enter atleast 6
+              characters!
+            </p>
+            <p class="form-valid-message">
+              <i class="fas fa-check-circle"></i> Strong password!
+            </p>
+          </div>
+          <div class="form-field">
+            <input class="form-checkbox" type="checkbox" id="terms" />
+            <label for="terms" class="form-label required"
+              >I accept all Terms & Conditions</label
+            >
+            <p class="form-checkbox-message">
+              <i class="fas fa-info-circle"></i> You must agree before
+              submitting!
+            </p>
+          </div>
+          <button class="btn btn-md primary form-btn" type="submit">
+            Create new account
+          </button>
+          <a href="../login-page/login.html" class="link login-link"
+            >Already have an account <span class="arrow">></span></a
+          >
+        </form>
+      </section>
+    </main>
+
+    <!-- JAVASCRIPT CODE -->
+
+    <script>
+      const forms = [...document.querySelectorAll(".form-container")];
+      forms.forEach((form) => {
+        form.addEventListener("submit", (e) => {
+          if (!form.checkValidity()) {
+            e.preventDefault();
+            form.classList.add("validate");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

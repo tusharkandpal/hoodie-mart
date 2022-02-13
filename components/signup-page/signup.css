@@ -1,0 +1,35 @@
+/* ------------------------|| IMPORTS -----------------------*/
+@import url("../../utilities/main.css");
+
+/* -------------------- || SIGNUP MAIN --------------------- */
+.signup-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 85vh;
+  background-color: #f7f7f7;
+}
+
+/* ------------------------- || FORM CONTAINER ------------------------ */
+.form-container {
+  background-color: white;
+  padding: 1.5rem 3rem;
+  align-items: stretch;
+}
+.signup-header,
+.login-link {
+  text-align: center;
+}
+.signup-header,
+.form-btn {
+  margin-bottom: 1.5rem;
+}
+.form-invalid-message,
+.form-checkbox-message {
+  font-size: small;
+}
+.arrow {
+  font-size: x-large;
+  vertical-align: auto;
+}
+
