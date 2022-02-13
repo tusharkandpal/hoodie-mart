@@ -1,0 +1,38 @@
+/* ------------------------|| IMPORTS -----------------------*/
+@import url("../../utilities/main.css");
+
+/* ------------------------- || LOGIN MAIN ----------------------- */
+.login-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 85vh;
+  background-color: #f7f7f7;
+}
+
+/* ------------------ || FORM CONTAINER ------------------ */
+.form-container {
+  background-color: white;
+  padding: 1.5rem 3rem;
+  align-items: stretch;
+}
+.login-header,
+.form-btn {
+  margin-bottom: 1.5rem;
+}
+.login-header,
+.signup-link {
+  text-align: center;
+}
+.form-invalid-message {
+  font-size: small;
+}
+.form-link {
+  text-decoration: none;
+  margin-left: 2rem;
+}
+.arrow {
+  font-size: x-large;
+  vertical-align: auto;
+}
+
