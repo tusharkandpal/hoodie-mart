@@ -6,7 +6,7 @@
 /* --------------------------- || CATEGORY SECTION ----------------- */
 .main {
     padding: 2rem 7rem;
-    background-color: #F7F7F7;
+    background-color: var(--component-bg-color);
 }
 .category-section {
     display: flex;
@@ -18,12 +18,12 @@
     min-width: 14rem;
 }
 .card-overlay-details {
-    background-color: #800039;
+    background-color: var(--card-overlay-bg-color);
 }
 
 /* ----------------------------- || BANNER SECTION -------------------- */
 .banner-section {
-    background-color: #C4C4C4;
+    background-color: var(--banner-bg-color);
     min-height: 30rem;
     margin: 2rem 0;
 }
@@ -34,7 +34,7 @@
     gap: 2rem;
 }
 .article {
-    background-color: #C4C4C4;
+    background-color: var(--banner-bg-color);
     display: flex;
     padding: 3rem 2.5rem;
 }

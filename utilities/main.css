@@ -3,7 +3,7 @@
 @import url('https://wings-ui.netlify.app/components/component.css');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap');
 
-/* ------------------- || ROOT CSS ---------------------------*/
+/* ------------------- || UNIVERSAL CSS ---------------------------*/
 * {
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
@@ -11,7 +11,16 @@
     padding: 0;
 }
 
-/* -------------- UTILITIES -------------- */
+/* ------------------- || ROOT CSS ---------------------------*/
+:root {
+    --brand-color: #f72585;
+    --container-bg-color: #ffffff;
+    --component-bg-color: #f7f7f7;
+    --card-overlay-bg-color: #800039;
+    --banner-bg-color: #c4c4c4;
+}
+
+/* -------------- || UTILITIES -------------- */
 .link {
     text-decoration: none;
     color: inherit;
@@ -27,7 +36,7 @@
     font-size: 1.3rem;
 }
 .brand-first-name {
-    color: #f72585;
+    color: var(--brand-color);
 }
 .search-addon {
     position: relative;
@@ -55,9 +64,9 @@
     font-size: 0.8rem;
 }
 
-/* --------------------------|| CARD ------------------------------- */
-.card {
-    background-color: white;
+/* -------------------------- || CONTAINERS ------------------------------- */
+.card,.form-container {
+    background-color: var(--container-bg-color);
 }
 
   
