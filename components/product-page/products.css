@@ -36,7 +36,7 @@
 
 /* ---------------------- || PRODUCTS SECTION --------------------------------*/
 .products-section {
-  background-color: #f7f7f7;
+  background-color: var(--component-bg-color);
   border-radius: 0.3rem;
   padding: 2rem 3rem;
   flex-grow: 1;
